@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - UC Hub</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+
+        <h2>Cadastro de Usuário</h2>
+        <p>Preencha os dados abaixo para acessar o sistema.</p>
+
+        <form action="https://www.google.com.br" class="was-validated">
+
+            <!-- Nome -->
+            <div class="mb-3 mt-3">
+                <label for="nome" class="form-label">Nome:</label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    id="nome"
+                    placeholder="Informe seu nome"
+                    name="nome_usuario"
+                    required>
+
+                <div class="valid-feedback">
+                    Nome informado corretamente.
+                </div>
+
+                <div class="invalid-feedback">
+                    Por favor, preencha o campo nome.
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+
+                <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Informe seu email"
+                    name="email_usuario"
+                    required>
+
+                <div class="valid-feedback">
+                    Email informado corretamente.
+                </div>
+
+                <div class="invalid-feedback">
+                    Por favor, informe um email válido.
+                </div>
+            </div>
+
+            <!-- Senha -->
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha:</label>
+
+                <input
+                    type="password"
+                    class="form-control"
+                    id="senha"
+                    placeholder="Informe sua senha"
+                    name="senha_usuario"
+                    required>
+
+                <div class="valid-feedback">
+                    Senha informada corretamente.
+                </div>
+
+                <div class="invalid-feedback">
+                    Por favor, preencha o campo senha.
+                </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check mb-3">
+
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="confirmacao"
+                    name="confirmacao_usuario"
+                    required>
+
+                <label class="form-check-label" for="confirmacao">
+                    Aceito os termos.
+                </label>
+
+                <div class="valid-feedback">
+                    Confirmação preenchida.
+                </div>
+
+                <div class="invalid-feedback">
+                    É necessário aceitar os termos.
+                </div>
+            </div>
+
+            <!-- Botão -->
+            <button type="submit" class="btn btn-primary">
+                Cadastrar
+            </button>
+
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
